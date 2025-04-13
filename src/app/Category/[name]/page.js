@@ -1,7 +1,8 @@
+"use client"
+
 // app/category/[name]/page.js
 
 import Image from "next/image";
-
 export default function CategoryPage({ params }) {
   const allProducts = {
     Shoes: [
@@ -110,6 +111,16 @@ export default function CategoryPage({ params }) {
   // ✅ Get the products for the dynamic category
   const products = allProducts[params.name] || [];
 
+  const handleOrderClick = (productName, productPrice, productImage) => {
+    const whatsappNumber = "923091007549"; // Your WhatsApp number with Pakistan country code
+    const fullImageUrl = `https://clientbinyameen.netlify.app${productImage}`; // Correct URL of the image
+    const message = `Hi, I am interested in the "${productName}" priced at ${productPrice}.\n\nHere is the product image:\n${fullImageUrl}\n\nPlease check out the image above!`;
+  
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, "_blank");
+
+  };
+
   return (
     <main className="p-6 md:p-10">
       <h1 className="text-3xl font-bold mb-8 text-center">
@@ -140,7 +151,7 @@ export default function CategoryPage({ params }) {
                       <p className="text-lg font-bold text-orange-600">{product.price}</p>
                       
                       <button 
-                        
+                        onClick={() => handleOrderClick(product.name, product.price,product.image)} 
                         className="mt-[2px] bg-[#5a2d0c] text-white py-1 px-4 text-[12px] rounded-md shadow-md hover:bg-gray-800 transition"
                       >
                         Order Now

@@ -56,7 +56,7 @@ const categories = [
 
 export default function Categories() {
   return (
-    <section className="py-10 px-1 md:px-10">
+    <section id="categories" className="py-10 px-1 md:px-10">
       <h2 className="text-center text-2xl md:text-3xl font-bold mb-8">Categories</h2>
 
       {/* Category List */}

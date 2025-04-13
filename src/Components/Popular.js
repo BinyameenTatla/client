@@ -42,6 +42,7 @@ const products = [
 ];
 
 export default function Popular() {
+  
   const handleOrderClick = (productName, productPrice, productImage) => {
     const whatsappNumber = "923091007549"; // Your WhatsApp number with Pakistan country code
     const fullImageUrl = `https://clientbinyameen.netlify.app${productImage}`; // Correct URL of the image
@@ -49,10 +50,12 @@ export default function Popular() {
   
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, "_blank");
-    
+
   };
+
+
   return (
-    <section className="py-10 px-2 md:px-20">
+    <section id="popular" className="py-10 px-2 md:px-20">
       <h2 className="text-center text-2xl md:text-3xl font-bold mb-8">
         Most Popular
       </h2>

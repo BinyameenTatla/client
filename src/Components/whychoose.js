@@ -28,7 +28,7 @@ const benefits = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-14 px-6 md:px-16 bg-white">
+    <section id="choose-us" className="py-14 px-6 md:px-16 bg-white">
       <h2 className="text-center text-3xl font-extrabold text-[black] mb-10">
         Why Choose <span className="text-[#5a2d0c]">KE Leather</span>? 🏆
       </h2>

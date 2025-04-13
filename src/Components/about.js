@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="bg-[#5a2d0c] text-white py-16 px-6 md:px-16">
+    <section id="about" className="bg-[#5a2d0c] text-white py-16 px-6 md:px-16">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
         
         {/* Left Content */}
