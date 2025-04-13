@@ -44,7 +44,7 @@ const products = [
 export default function Popular() {
   const handleOrderClick = (productName, productPrice, productImage) => {
     const whatsappNumber = "923091007549"; // Your WhatsApp number with Pakistan country code
-    const fullImageUrl = `http://localhost:3000${productImage}`; // Localhost image path
+    const fullImageUrl = `hhttps://clientbinyameen.netlify.app${productImage}`; // Localhost image path
     const message = `Hi, I am interested in the "${productName}" priced at ${productPrice}.\n\nHere is the product image:\n${fullImageUrl}`;
   
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
