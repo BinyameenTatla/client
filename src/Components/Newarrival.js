@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { FaWhatsapp } from "react-icons/fa";
 
 const products = [
   {
@@ -19,7 +20,7 @@ const products = [
   },
   {
     id: 2,
-    name: " Dark Black Sandle",
+    name: "Deep Dark Black Sandle",
     image: "/A2.jpeg",
     price: "5400",
     oldPrice: "6000",
@@ -61,29 +62,41 @@ export default function Popular() {
       <div className="flex flex-wrap  justify-center gap-3 md:gap-6">
         {products.map((product) => (
           <div 
-            key={product.id} 
-            className="bg-white border border-gray-200 shadow-lg rounded-lg p-2 
-            w-[130px] sm:w-[180px] md:w-[200px] lg:w-[220px] flex flex-col items-center transition-all hover:scale-105"
-          >
-            <Image 
-              src={product.image} 
-              alt={product.name} 
-              width={100} 
-              height={100} 
-              className="rounded-lg w-[150px] h-[130px] md:h-[170px] md:w-[170px] object-cover"
-            />
-            
-            <h3 className="mt-[2px] text-sm font-semibold text-center">{product.name}</h3>
-            <p className="text-gray-500 line-through text-sm">{product.oldPrice}</p>
-            <p className="text-lg font-bold text-orange-600">{product.price}</p>
-            
-            <button 
-              onClick={() => handleOrderClick(product.name, product.price)} 
-              className="mt-[2px] bg-[#5a2d0c] text-white py-1 px-4 text-[12px] rounded-md shadow-md hover:bg-gray-800 transition"
-            >
-              Order Now
-            </button>
-          </div>
+                             key={product.id} 
+                             className="bg-white border border-gray-200 shadow-md rounded-xl p-3 
+                                        w-[140px] sm:w-[180px] md:w-[200px] lg:w-[220px] 
+                                        flex flex-col items-center transition-transform duration-200 hover:scale-105"
+                           >
+                             {/* Product Image */}
+                             <Image 
+                               src={product.image} 
+                               alt={product.title} 
+                               width={170} 
+                               height={185} 
+                               className="rounded-lg w-[150px] h-[150px] md:w-[170px] md:h-[185px] object-cover"
+                             />
+                           
+                             {/* Product Name */}
+                             <h3 className="mt-2 text-[13px] md:text-sm font-semibold text-center text-gray-800">
+                               {product.name}
+                             </h3>
+                           
+                             {/* Prices */}
+                             <div className="mt-1 flex flex-col items-center">
+                               <p className="text-gray-400 line-through text-sm md:text-sm">{product.oldPrice}</p>
+                               <p className="text-orange-600 font-bold text-lg md:text-lg">{product.price}</p>
+                             </div>
+                           
+                             {/* Order on WhatsApp Button */}
+                             <button 
+                               onClick={() => handleOrderClick(product.name, product.price, product.image)} 
+                               className="mt-3 bg-[#25D366] hover:bg-[#1ebe5d] text-white text-[11px] md:text-[13px] font-medium py-2 px-4 
+                                          rounded-md shadow-md flex items-center gap-2 transition-all"
+                             >
+                               <FaWhatsapp className="text-white text-sm md:text-base" />
+                               Order on WhatsApp
+                             </button>
+                           </div>
         ))}
       </div>
     </section>
