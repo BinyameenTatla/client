@@ -28,9 +28,9 @@ export default function CategoryPage() {
     Jackets: [
       { title: "Leather Jacket", price: "Rs 15000", oldPrice: "17000", phone: "+923091007549", image: "/products/jackets/jacket1.jpeg" },
       { title: "Denim Jacket", price: "Rs 15000", oldPrice: "17000", phone: "+923091007549", image: "/products/jackets/jacket2.jpeg" },
-      { title: "Bomber Jacket", price: "Rs 15000", oldPrice: "17000", phone: "+923091007549", image: "/products/jackets/jacket3.jpeg" },
+      { title: "Bomber Jacket", price: "Rs 17000", oldPrice: "19000", phone: "+923091007549", image: "/products/jackets/jacket3.jpeg" },
       { title: "Winter Parka", price: "Rs 15000", oldPrice: "17000", phone: "+923091007549", image: "/products/jackets/jacket4.jpeg" },
-      { title: "Rain Jacket", price: "Rs 15000", oldPrice: "17000", phone: "+923091007549", image: "/products/jackets/jacket5.jpeg" },
+      { title: "Rain Jacket", price: "Rs 17000", oldPrice: "19000", phone: "+923091007549", image: "/products/jackets/jacket5.jpeg" },
       { title: "Hooded Jacket", price: "Rs 15000", oldPrice: "17000", phone: "+923091007549", image: "/products/jackets/jacket6.jpeg" },
       { title: "Puffer Jacket", price: "Rs 15000", oldPrice: "17000", phone: "+923091007549", image: "/products/jackets/jacket7.jpeg" },
       { title: "Windbreaker", price: "Rs 15000", oldPrice: "17000", phone: "+923091007549", image: "/products/jackets/jacket8.jpeg" },
