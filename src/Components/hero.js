@@ -1,49 +1,47 @@
 "use client";
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
 
-const images = ["/bag6.jpeg", "/hero22.jpeg", "/hero1.jpeg"];
-
 export default function Hero() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const whatsappLink = "https://wa.me/03091007549?text=Hi%20I%20am%20interested%20in%20your%20products";
+  const whatsappLink =
+    "https://wa.me/03091007549?text=Hi%20I%20am%20interested%20in%20your%20products";
 
   return (
-    <section className="relative w-full h-[80vh] bg-[#56361f] text-black overflow-hidden">
-      <Image
-        src={images[currentIndex]}
-        alt="Leather Product"
-        fill
-        priority
-        className="object-cover opacity-30" 
-      />
-      
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 md:px-8">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg tracking-wide">
-          KE Leather
-        </h1>
-        <p className="text-lg md:text-2xl  mb-6 max-w-xl drop-shadow-md">
-          Premium handcrafted leather goods — shoes, belts, wallets & more.
-        </p>
+    <section className=" text-black flex flex-col md:flex-row overflow-hidden py-10 md:py-0">
+      {/* Text: Left side on desktop, top on mobile */}
+      <div className="flex-1 flex items-center justify-center px-6 md:pl-1 text-center md:text-left">
+        <div className="space-y-6">
+          <h1 className="text-4xl md:text-6xl text-[#6a3b1c] font-extrabold tracking-tight leading-tight">
+            KE Leather
+          </h1>
+          <p className="text-lg md:text-2xl max-w-md text-black">
+          Discover the timeless elegance of handcrafted leather,
+          from meticulously designed shoes, wallets, belts, to premium bags—crafted to perfection
+          </p>
+          <a
+            href="#categories"
+            
+            
+            className="inline-flex items-center gap-3 bg-[#6a3b1c] hover:bg-white hover:text-[#6a3b1c] text-white font-semibold px-6 py-3 rounded-full text-lg shadow-lg transition-all duration-300"
+          >
+            
+            Explore Categories
 
-        <a
-          href={whatsappLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-[#5a2d0c] hover:bg-white hover:text-[#5a2d0c] text-white font-semibold px-6 py-3 rounded-full text-lg shadow-md transition-all duration-300"
-        >
-          <FaWhatsapp className="text-xl" />
-          Order on WhatsApp
-        </a>
+          </a>
+        </div>
+      </div>
+
+      {/* Image: Right side on desktop, bottom on mobile */}
+      <div className="flex-1 flex items-center  justify-center px-1 sm:px-6 md:px-0  md:mt-0">
+        <div className="relative mt-10 lg:mt-16  rounded-3xl  ">
+          <Image
+            src="/hero.png"
+            alt="Leather Product"
+            width={350}
+            height={350}
+            className="object-cover w-[355px] h-[355px] sm:h-[380px] sm:w-[380px] md:h-[380px] md:w-[380px] lg:h-[450px] lg:w-[450px] rounded-3xl"
+          />
+        </div>
       </div>
     </section>
   );

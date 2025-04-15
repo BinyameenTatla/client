@@ -8,56 +8,51 @@ const categories = [
     name: "Shoes",
     image: "/Category/shoes.webp",
     
-    images: Array.from({ length: 15 }, (_, i) => `/shoes/shoe${i + 1}.jpeg`),
+    
   },
   {
     name: "Jackets",
     image: "/Category/jacket.webp",
     
-    images: Array.from({ length: 15 }, (_, i) => `/jackets/jacket${i + 1}.jpeg`),
+    
   },
   {
     name: "Belts",
     image: "/Category/belt.webp",
   
-    images: Array.from({ length: 15 }, (_, i) => `/belts/belt${i + 1}.jpeg`),
+    
   },
   {
     name: "Bags",
     image: "/Category/bag.webp",
    
-    images: Array.from({ length: 15 }, (_, i) => `/bags/bag${i + 1}.jpeg`),
   },
   {
     name: "Peshawris",
     image: "/Category/sandle.webp",
    
-    images: Array.from({ length: 15 }, (_, i) => `/peshwari/peshwari${i + 1}.jpeg`),
   },
   {
     name: "Sandles",
     image: "/sandle.jpeg",
     
-    images: Array.from({ length: 15 }, (_, i) => `/sandle/sandle${i + 1}.jpeg`),
   },
   {
     name: "Slippers",
     image: "/S1.jpeg",
  
-    images: Array.from({ length: 15 }, (_, i) => `/sandle/sandle${i + 1}.jpeg`),
   },
   {
     name: "Wallets",
     image: "/Category/wallet.webp",
     
-    images: Array.from({ length: 15 }, (_, i) => `/wallets/wallet${i + 1}.jpeg`),
   },
 ];
 
 export default function Categories() {
   return (
     <section id="categories" className="py-10 px-1 md:px-10">
-      <h2 className="text-center text-2xl md:text-3xl font-bold mb-8">Categories</h2>
+      <h1 className="text-center text-3xl md:text-3xl font-bold mb-8">Categories</h1>
 
       {/* Category List */}
       <ul className="flex flex-wrap justify-center gap-1">

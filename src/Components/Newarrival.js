@@ -55,7 +55,7 @@ export default function Popular() {
 
   return (
     <section id="new-arrivals" className="py-10 px-2 md:px-20">
-      <h2 className="text-center text-2xl md:text-3xl font-bold mb-8">
+      <h2 className="text-center text-3xl md:text-3xl font-bold mb-8">
         New Arrivals
       </h2>
       
@@ -70,7 +70,7 @@ export default function Popular() {
                              {/* Product Image */}
                              <Image 
                                src={product.image} 
-                               alt={product.title} 
+                               alt={product.name} 
                                width={170} 
                                height={185} 
                                className="rounded-lg w-[150px] h-[150px] md:w-[170px] md:h-[185px] object-cover"
