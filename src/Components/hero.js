@@ -33,7 +33,7 @@ export default function Hero() {
 
       {/* Image: Right side on desktop, bottom on mobile */}
       <div className="flex-1 flex items-center  justify-center px-1 sm:px-6 md:px-0  md:mt-0">
-        <div className="relative mt-10 lg:mt-16  rounded-3xl  ">
+        <div className="relative mt-14 lg:mt-16  rounded-3xl  ">
           <Image
             src="/hero.png"
             alt="Leather Product"

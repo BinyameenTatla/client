@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FaFacebookF, FaInstagram,FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
-  const whatsappLink = "https://wa.me/03091007549?text=Hi%20I%20am%20interested%20in%20your%20products";
+  const whatsappLink = "https://wa.me/03091007549?text=Hi%20I%20am%20interested%20in%20your%20products.I want to talk with you.You are availaible at this time";
 
   return (
     <footer className="bg-white text-black py-12 px-6 md:px-16 border-t">
@@ -28,10 +28,10 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold text-[#5a2d0c]">Quick Links</h3>
           <ul className="mt-4 space-y-2">
-            <li><a href="#" className="text-black hover:text-[#5a2d0c]">New Arrivals</a></li>
-            <li><a href="#" className="text-black hover:text-[#5a2d0c]">Popular</a></li>
-            <li><a href="#" className="text-black hover:text-[#5a2d0c]">Shop</a></li>
-            <li><a href="#" className="text-black hover:text-[#5a2d0c]">FAQs</a></li>
+            <li><a href="#new-arrivals" className="text-black hover:text-[#5a2d0c]">New Arrivals</a></li>
+            <li><a href="#popular" className="text-black hover:text-[#5a2d0c]">Popular</a></li>
+            <li><a href="#categories" className="text-black hover:text-[#5a2d0c]">Categories</a></li>
+            <li><a href="#faqs" className="text-black hover:text-[#5a2d0c]">FAQs</a></li>
           </ul>
         </div>
 
