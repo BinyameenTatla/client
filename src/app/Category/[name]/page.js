@@ -21,7 +21,7 @@ export default function CategoryPage() {
       { title: "Converse High Tops", price: "Rs 9000", oldPrice: "10000", phone: "+923091007549", image: "/products/shoes/shoe6.jpeg" },
       { title: "Fila Memory", price: "Rs 9000", oldPrice: "11000", phone: "+923091007549", image: "/products/shoes/shoe7.jpeg" },
       { title: "Under Armour Charged", price: "Rs 12000", oldPrice: "13500", phone: "+923091007549", image: "/products/shoes/shoe8.jpeg" },
-      { title: "Asics Gel", price: "Rs 12000", oldPrice: "13000", phone: "+923091007549", image: "/products/shoes/shoe9.jpeg" },
+      { title: "Asics Gel", price: "Rs 6300", oldPrice: "7000", phone: "+923091007549", image: "/products/shoes/shoe9.jpeg" },
       { title: "New Balance Trail", price: "Rs 6300", oldPrice: "7000", phone: "+923091007549", image: "/products/shoes/shoe10.jpeg" },
     ],
   
