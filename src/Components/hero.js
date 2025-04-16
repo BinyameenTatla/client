@@ -11,9 +11,13 @@ export default function Hero() {
       {/* Text: Left side on desktop, top on mobile */}
       <div className="flex-1 flex items-center justify-center px-6 md:pl-1 text-center md:text-left">
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-6xl text-[#6a3b1c] font-extrabold tracking-tight leading-tight">
-            KE Leather
-          </h1>
+        <h1 className="w-full max-w-md">
+  <img
+    src="/logo.webp"
+    alt="KE Leather"
+    className="w-full h-auto object-contain"
+  />
+</h1>
           <p className="text-lg md:text-2xl max-w-md text-black">
           Discover the timeless elegance of handcrafted leather,
           from meticulously designed shoes, wallets, belts, to premium bags—crafted to perfection
