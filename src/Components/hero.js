@@ -1,23 +1,21 @@
 "use client";
 import Image from "next/image";
-import { FaWhatsapp } from "react-icons/fa";
+
 
 export default function Hero() {
-  const whatsappLink =
-    "https://wa.me/03091007549?text=Hi%20I%20am%20interested%20in%20your%20products";
-
+ 
   return (
     <section className=" text-black flex flex-col md:flex-row overflow-hidden py-10 md:py-0">
       {/* Text: Left side on desktop, top on mobile */}
-      <div className="flex-1 flex items-center justify-center px-6 md:pl-1 text-center md:text-left">
+      <div className="flex-1 flex items-center justify-center px-6 md:pl-1 text-center md:text-start">
         <div className="space-y-6">
-        <h1 className="w-full max-w-md">
+       
   <img
     src="/logo.webp"
     alt="KE Leather"
-    className="w-full h-auto object-contain"
+    className=" flex flex-start h-[190px] object-contain"
   />
-</h1>
+
           <p className="text-lg md:text-2xl max-w-md text-black">
           Discover the timeless elegance of handcrafted leather,
           from meticulously designed shoes, wallets, belts, to premium bags—crafted to perfection
