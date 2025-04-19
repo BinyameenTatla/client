@@ -13,7 +13,7 @@ export default function Hero() {
   <img
     src="/logo.webp"
     alt="KE Leather"
-    className=" flex flex-start h-[190px] object-contain"
+    className="flex flex-start h-[190px] object-contain"
   />
 
           <p className="text-lg md:text-2xl max-w-md text-black">
