@@ -15,7 +15,7 @@ export default function CategoryPageClient({ name, products }) {
 
 const handleOrderClick = (productName, productPrice, productImage) => {
     const whatsappNumber = "923091007549"; // Your WhatsApp number with Pakistan country code
-    const fullImageUrl = `https://KEleather${productImage}`; // Correct URL of the image
+    const fullImageUrl = `https://KEleather.com${productImage}`; // Correct URL of the image
     const message = `Hi, I am interested in the "${productName}" priced at ${productPrice}.\n\nHere is the product image:\n${fullImageUrl}\n\nPlease check out the image above!`;
   
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;

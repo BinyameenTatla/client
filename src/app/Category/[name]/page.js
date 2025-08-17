@@ -14,8 +14,8 @@ export async function generateStaticParams() {
     { name: 'Jackets' },
     { name: 'Belts' },
     { name: 'Bags' },
-    { name: 'Peshwaris' },
-    { name: 'Sandals' },
+    { name: 'Peshawris' },
+    { name: 'Sandles' },
     { name: 'Slippers' },
     { name: 'Wallets' },
   ];
